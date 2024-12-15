@@ -1,0 +1,104 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', serif;
+  font-weight: 700;
+  font-style: normal;
+}
+body {
+  background: rgb(63, 94, 251);
+  background: linear-gradient(
+    90deg,
+    rgba(63, 94, 251, 1) 0%,
+    rgba(70, 101, 252, 0.5074404761904762) 100%
+  );
+}
+.card {
+  width: 100%;
+  max-width: 40vw;
+  margin: 150px 50px 50px 140px;
+  padding: 10px;
+}
+.heading {
+  padding: 10px;
+  font-size: 1.5rem;
+}
+.white-1 {
+  color: rgb(8, 8, 8);
+  padding: 5px 0px;
+}
+.yellow-2 {
+  color: rgb(222, 250, 80);
+}
+.section {
+  height: 100px;
+  width: 500px;
+  background-color: rgba(255, 255, 255, 0.28);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  margin: 20px 0px 20px 10px;
+  
+}
+
+.transparent-box {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  align-items: center;
+  position: relative;
+  align-items: center;
+}
+
+/* .transparent-box .date {
+  width: 330px;
+  height: 50px;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+} */
+.transparent-box .btn {
+  height: 42px;
+  background-color: rgb(222, 250, 80);
+  border-radius: 10px;
+  width: 120px;
+  border: none;
+  cursor: pointer;
+  margin-left: 16px
+}
+.transparent-box .date {
+  width: 330px; /* Ensures input box width is 330px */
+  height: 50px; /* Set input height */
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.2); /* Optional border styling */
+  border-radius: 10px; /* Smooth corners */
+  padding: 10px 40px 10px 10px; /* Space for the calendar icon */
+  font-size: 16px; /* Matches the font size in the example */
+  position: relative;
+  cursor: pointer; /* Ensures pointer cursor for the entire input */
+}
+
+.transparent-box .date::-webkit-calendar-picker-indicator {
+  position: absolute;
+  right: 10px; /* Aligns the icon to the right */
+  top: 50%; /* Vertically centers the icon */
+  transform: translateY(-50%);
+  cursor: pointer; /* Pointer cursor for the calendar icon */
+  width: 20px;
+  height: 20px;
+}
+
+
+.btn:hover{
+    background-color: rgb(167, 190, 53);
+}
+.answer p{
+    margin: 40px 0px 40px 10px;
+    color: aliceblue;
+    font-weight: 200;
+}
+p span{
+  color:rgb(222, 250, 80); 
+}
